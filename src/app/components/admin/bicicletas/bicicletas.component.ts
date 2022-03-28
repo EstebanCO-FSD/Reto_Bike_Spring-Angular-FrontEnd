@@ -14,6 +14,8 @@ export class BicicletasComponent implements OnInit {
     marca: '',
     tipo: '',
     color: '',
+    lat: '',
+    lon: '',
     estado: false
   }
 
@@ -44,6 +46,8 @@ export class BicicletasComponent implements OnInit {
       marca: '',
       tipo: '',
       color: '',
+      lat: '',
+      lon: '',
       estado: false
     }
   }

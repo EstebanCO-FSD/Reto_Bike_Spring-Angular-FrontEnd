@@ -28,5 +28,4 @@ export class BicicletaService {
   delete(id: string) {
     return this.http.delete(`${API_BASE}/bicicletas/${id}`);
   }
-
 }

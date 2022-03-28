@@ -35,6 +35,16 @@
             <label for="color">Color</label>
         </div>
 
+        <div class="mb-3 form-floating">
+            <input type="text" id="latitud" name="latitud" placeholder="latitud" class="form-control" [(ngModel)]="bicicleta.lat">
+            <label for="latitud">Latitud</label>
+        </div>
+
+        <div class="mb-3 form-floating">
+            <input type="text" id="longitud" name="longitud" placeholder="longitud" class="form-control" [(ngModel)]="bicicleta.lon">
+            <label for="longitud">Longitud</label>
+        </div>
+
         <div class="mb-3 form-check">
             <input type="checkbox" id="estado" name="estado" placeholder="estado" class="form-check-input" [(ngModel)]="bicicleta.estado">
             <label for="estado" class="form-check-label">Estado</label>
@@ -67,6 +77,8 @@
 
             <div>{{ bicicletas.tipo }}</div>
             <div>{{ bicicletas.color }}</div>
+            <div>{{ bicicletas.lat }}</div>
+            <div>{{ bicicletas.lon }}</div>
 
             <div>
                 <small class="text-success" *ngIf="bicicletas.estado; else noRentado">
